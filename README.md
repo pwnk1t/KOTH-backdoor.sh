@@ -1,6 +1,6 @@
 Run this Script as Root !
 
-chmod +x persistacne.sh 
+chmod +x persistance.sh 
 
 ./persistance.sh 
 
