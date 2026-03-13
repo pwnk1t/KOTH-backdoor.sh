@@ -15,8 +15,6 @@ sleep 1
 
 read -p "Attacker IP: " IP
 
-echo "[💀] Installing persistence..."
-
 sleep 2
 
 ################################
