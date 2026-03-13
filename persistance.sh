@@ -4,7 +4,7 @@
 # https://www.youtube.com/@pwnk1t
 # tired of get kicked of the server? 
 # this script will create multiple backdoors
-# All you need is to change the IP and SSH Key
+# All you need is your VPN IP and you SSH-Key
 
 
 clear
