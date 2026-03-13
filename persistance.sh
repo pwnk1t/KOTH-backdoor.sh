@@ -13,7 +13,7 @@ echo "[💀] Installing persistence..."
 
 sleep 1
 
-read -p "Attacker IP: " IP
+read -p "YOUR IP: " IP
 
 sleep 2
 
