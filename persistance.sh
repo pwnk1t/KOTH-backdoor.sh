@@ -49,6 +49,8 @@ echo "[+] installing ssh key"
 
 read -p "Paste SSH public key: " SSHKEY
 
+mkdir -p /root/.ssh
+
 echo "$SSHKEY" > /root/.ssh/authorized_keys
 
 chmod 600 /root/.ssh/authorized_keys
