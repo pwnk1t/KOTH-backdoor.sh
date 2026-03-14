@@ -97,7 +97,7 @@ sleep 2
 echo "[!] Open listeners:"
 echo ""
 sleep 1
-echo -e "     \033[96m1337 4444 5555\033[0m"
+echo -e "   \033[96m1337 4444 5555\033[0m"
 sleep 1
 echo ""
 echo "[💀] created by pwnk1t [💀]"
