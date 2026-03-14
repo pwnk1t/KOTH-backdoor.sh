@@ -2,7 +2,6 @@
 
 # Created by pwnk1t 
 # https://www.youtube.com/@pwnk1t
-# tired of get kicked of the server? 
 # this script will create multiple backdoors
 # All you need is your VPN IP and you SSH-Key
 
@@ -98,5 +97,7 @@ sleep 2
 echo "[!] Open listeners:"
 echo ""
 sleep 1
-echo -e "\033[96m1337 4444 5555\033[0m"
+echo -e "     \033[96m1337 4444 5555\033[0m"
+sleep 1
 echo ""
+echo "[💀] created by pwnk1t[💀]"
