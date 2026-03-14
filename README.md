@@ -4,11 +4,10 @@ chmod +x persistance.sh
 
 ./persistance.sh 
 
-On some machine you may not recivie a connection on port 5555
-you can fix this by doing this step manually (as root)
+PORT 4444 Bashrc backdoor 
+everytime someone logs in as root on the server you will recive a reverseshell 
+if you dont get a connection maybe nobody loged in as root in this game! 
 
-
-systemctl enable sys-update
-
-systemctl start sys-update
-
+PORT 1337 cron backdoor 
+here you recive a reverseshell every minute 
+since we have the bashrc you normally should get 2 shells 
