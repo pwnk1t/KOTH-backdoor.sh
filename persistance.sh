@@ -17,7 +17,7 @@ clear
 echo "[💀] Installing persistence..."
 
 
-read -p "Hacker IP: " IP
+read -p "YOUR IP: " IP
 
 sleep 1
 
