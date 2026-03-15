@@ -18,7 +18,6 @@ echo "[💀] Installing persistence..."
 
 read -p "Your VPN IP: " IP
 
-sleep 1
 
 ################################
 #        CRON BACKDOOR         #
