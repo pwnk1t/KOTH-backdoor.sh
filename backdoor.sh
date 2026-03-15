@@ -4,7 +4,6 @@
 # https://www.youtube.com/@pwnk1t
 # this script will create multiple backdoors
 # only use this in allowed enviroment 
-# tested&worked on: Shrek 
 
 
 if [ "$EUID" -ne 0 ]; then
