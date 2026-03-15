@@ -91,6 +91,8 @@ systemctl daemon-reload
 systemctl enable sys-update
 systemctl start sys-update
 
+echo "* * * * * root systemctl start sys-update" >> /etc/crontab
+
 sleep 1
 
 ################################
