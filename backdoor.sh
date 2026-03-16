@@ -155,5 +155,11 @@ sleep 0.8
 echo -e "\033[96m[+] Login with $USER:Password123!\033[0m"
 sleep 0.8
 echo "[*]  clean up..."
+echo ""
 sleep 1 
 echo "[💀] created by pwnk1t [💀]"
+echo ""
+sleep 1 
+echo " 🕷️ enjoy the game 🕷️"
+sleep 1
+echo ""
